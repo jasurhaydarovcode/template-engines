@@ -1,6 +1,6 @@
 ### Hi, You will find installation and information about `Template Engines` in this repo
 
-#### For suggestions and additions `jasurbekhaydarovcode@gmail.com`
+#### For suggestions and additions `issue`
 
 ## ___There are 3 most popular template engines___
 
@@ -83,53 +83,15 @@ Inject data within a route, as shown in the previous code snippet. The ` = ` syn
 
 # <img align='center' src="https://handlebarsjs.com/images/handlebars_logo.png" alt="hbs" title="Handlebars" width='60'> HANDLEBARS
 
-<img src="https://img.shields.io/npm/v/express-handlebars.svg?style=flat-square" alt="npm version logo">
+[//]: # (## 🌱 Install)
 
-## 🌱 Install
-```bash
-npm i express-handlebars
-```
+[//]: # (```bash)
 
-## 1. Use in an Express.js application:
-```js
-const express = require('express');
-const exphbs  = require('express-handlebars');
+[//]: # (npm i express-handlebars)
 
-const app = express();
+[//]: # (```)
 
-// Set up the template engine
-app.engine('handlebars', exphbs());
-app.set('view engine', 'handlebars');
-
-// Create a route
-app.get('/', function (req, res) {
-    res.render('home');
-});
-
-app.listen(3000, function () {
-    console.log('Server is running on port 3000');
-});
-
-```
-
-## 2. Create a template:
-For example, create a file named home.handlebars in the views folder and write your HTML with Handlebars syntax:
-
-```handlebars
-<h1>{{title}}</h1>
-<p>{{message}}</p>
-```
-
-## 3. Send data to the template: 
-Inject data within a route:
-
-```js
-app.get('/', function (req, res) {
-    res.render('home', { title: 'Hello', message: 'This is an Express-Handlebars example.' });
-});
-
-```
-
+# Coming Soon
 
 ---
 
@@ -183,6 +145,7 @@ Inject data within a route, as shown in the previous code snippet. The <%= %> sy
 ---
 
 ### you can install all three template engines in one
+
 #### pug, handlebars and ejs
 ```bash
 npm install --save pug ejs express-handlebars
